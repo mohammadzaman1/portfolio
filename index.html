@@ -1,100 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Mohammad's Porfolio</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
-                <div class="container px-5">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1FYUe2qz2v8BEm5CpXh6lvWlrWgNHhnmZ/view?usp=sharing " target="_blank">Resume</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li> -->
-                            
-                        </ul>
-                    </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="Mohammad Zaman - Portfolio">
+    <meta name="keywords" content="Mohammad Zaman, Software Developer, Portfolio">
+    <meta property="og:title" content="Mohammad Zaman - Portfolio">
+    <meta property="og:description" content="Explore the projects and skills of Mohammad Zaman, a software developer.">
+    <meta property="og:image" content="./assets/profile-pic.jpg">
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav id="desktop-nav">
+            <div class="logo">Mohammad Zaman</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Mohammad Zaman</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-            </nav>
-            <!-- Header-->
-            <header class="py-5">
-                <div class="container px-5 pb-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-xxl-5">
-                            <!-- Header text content-->
-                            <div class="text-center text-xxl-start">
-                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Software Engineer &middot; photographer </div></div>
-                                <div class="fs-3 fw-light text-muted">Hello, I'm</div>
-                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Mohammad Zaman (Ashik)</span></h1>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="https://www.linkedin.com/in/mohammadz20/" target= "_blank">Linkedin</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="https://drive.google.com/file/d/1FYUe2qz2v8BEm5CpXh6lvWlrWgNHhnmZ/view?usp=sharing" target= "_blank">Resume</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
-                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                                <div class="profile bg-gradient-primary-to-secondary">
-                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <img class="profile-img" src="assets/profile.png" alt="..." />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <!-- About Section-->
-            <section class="bg-light py-5">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-8">
-                            <div class="text-center my-5">
-                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                                <p class="lead fw-light mb-4">My name is Mohammad Zaman, and I am currently a fellow at Headstarter AI. I'm a second-year student at Hunter College in
-                                New York with a Computer Science major and an Economics minor. I have experience working with Python, c++, HTML/CSS and
-                                I am currently learning more about AI implementation. When I’m not working on a project you will probably see me
-                                wandering around the city taking photos as I do photography as a hobby.  </p>
-                                <!-- <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <a class="text-gradient" href="#!"><i class="bi bi-twitter"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-linkedin"></i></a>
-                                    <a class="text-gradient" href="#!"><i class="bi bi-github"></i></a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Mohammad Zaman</div></div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.jpg" alt="Mohammad Zaman profile picture" loading="lazy" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Mohammad Zaman</h1>
+                <p class="section__text__p2">Software Developer</p>
+                <div class="btn-container">
+                    <button class="button" type="button" onclick="window.open('./assets/resume.pdf')">
+                        <span class="button__text">Resume</span>
+                        <span class="button__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
+                                id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
+                                <path
+                                    d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
+                                </path>
+                                <path
+                                    d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
+                                </path>
+                                <path
+                                    d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                    <button onclick="location.href='#contact'">
+                        <span class="button_top">Contact</span>
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon"
+                        onclick="window.open('https://www.linkedin.com/in/mohammadz20/', '_blank')" />
+                    <img src="./assets/github.png" alt="GitHub profile" class="icon"
+                        onclick="window.open('https://github.com/mohammadzaman1', '_blank')" />
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.jpg" alt="About picture" class="about-pic" loading="lazy" />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/skills.png" alt="skills icon" class="icon" />
+                            <h3>Experience</h3>
+                            <p>Headstarter AI<br />7 weeks AI project based fellowship</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education icon" class="icon" />
+                            <h3>Education</h3>
+                            <p>Hunter college<br />B.A. in Computer Science (Graduating May 2027)</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Hi! I'm Mohammad, currently a fellow at Headstarter AI. I'm a second-year student at Hunter College in
+                            New York with a Computer Science major and an Economics minor. I have experience working with Python, c++, HTML/CSS and
+                            I am currently learning more about AI implementation to make our lives a little easier. 
+                        </p>
+                        <br>
+                        <p>
+                            When I'm not working on a project you will probably see me
+                            wandering around the city taking photos as I do photography as a hobby.
+                        </p>
+                        <br/>
+                        <p> 
+                            <br/>
+                        </p>
+                      
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+        </section>
+
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+
+            <div class="skills-details-container">
+                <div class="about-containers">
+
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="assets/project-1-images/img1.png" style="width: 100px; height: auto;">
+                        </div>
+                        <h2 class="skills-sub-title project-title">BrightMind</h2>
+                        <h3 class="project-subtitle">Web Chatbot</h3>
+                        <p class="project-description">
+                            A web chatbot I made with Node.js utilizing the OpenAI GPT-4o model to provide mental well-being support. It is
+                            designed to engage in conversations with users and offer guidance, resources, and support for their mental health. The
+                            chatbot uses natural language processing to understand user inputs and generate appropriate responses based on the
+                            GPT-4o model's training.
+                        </p>
+                        <div class="btn-container">
+                            <button onclick="window.open('https://github.com/mohammadzaman1/aichatbot', '_blank')">
+                                <span class="button_top">Github</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="details-container color-container">
+                        <!-- <div class="article-container">
+                            <img src="assets/project-1-images/img1.png" style="width: 100px; height: auto;">
+                        </div> -->
+                        <h2 class="skills-sub-title project-title">Coming soon..</h2>
+                        <h3 class="project-subtitle">...</h3>
+                        <p class="project-description">
+                           ....
+                        </p>
+                        <!-- <div class="btn-container">
+                            <button onclick="window.open('', '_blank')">
+                                <span class="button_top">Github</span>
+                            </button>
+                        </div> -->
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+        </section>
+
+        <section id="skills">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Skills</h1>
+            <div class="skills-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="skills-sub-title">Frontend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="HTML icon" class="icon" />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="CSS icon" class="icon" />
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="JavaScript icon" class="icon" />
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="React icon" class="icon" />
+                                <div>
+                                    <h3>React JS/ Native</h3>
+                                    <p>Basic</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="skills-sub-title">Backend Development</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Python icon" class="icon" />
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Java icon" class="icon" />
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="NodeJS icon" class="icon" />
+                                <div>
+                                    <h3>Node JS</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Git icon" class="icon" />
+                                <div>
+                                    <h3>Git</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+        </section>
+
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                    <p><a href="mailto:mdashikuzzaman17@gmail.com">mdashikuzzaman17@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                    <p><a href="https://www.linkedin.com/in/mohammadz20" target="_blank">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Mohammad Zaman. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>
