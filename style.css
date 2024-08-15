@@ -435,6 +435,12 @@ button:active .button_top {
     justify-content: space-around;
 }
 
+.project-pic{
+    width:90%;
+    height:auto;
+    border-radius: 10px;
+}
+
 article {
     display: flex;
     width: 10rem;
